@@ -1,0 +1,21 @@
+
+
+Player Object:
+    Constructor
+    Character Creation
+    Skills?
+        EX: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
+        Also: Luck, Mechanical, Shooting, etc. 
+    Character Archtypes/Classes?
+    Add stats to rolls
+
+
+Game:
+    Rolling dice/Random chance
+    Creating and implementing random events
+    Creating locations for players to travel
+    Shops?
+    
+
+Misc:
+    Art? (Probably just ASCII since its a text game)
