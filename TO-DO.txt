@@ -5,7 +5,7 @@ Player Object:
     Character Creation
     Skills?
         EX: Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
-        Also: Luck, Mechanical, Shooting, etc. 
+        Also: Luck, Mechanical, Shooting, Medical, Composure? etc. 
     Character Archtypes/Classes?
     Add stats to rolls
 
@@ -15,7 +15,23 @@ Game:
     Creating and implementing random events
     Creating locations for players to travel
     Shops?
+    Vehicles?
+    Bases for players to stay at?
+    End goal?
     
-
 Misc:
     Art? (Probably just ASCII since its a text game)
+
+Questions:
+    How will stat generation work? 
+        Dnd has several ways, including random generation, point buy and standard array.
+        Most video games have the player set it themselves (Like Fallout)
+        Another potential way is character classes, with each class having good stats and bad stats
+    
+    What is the range of stats?
+        I.e: what is the minimum in a stat vs the max, Dnd is 1 - 20, some games I've seen do 0 - 10, some do -5 - 5 (negatives meaning they are bad at a skill)
+   
+    How many characters can the player control? 
+        I think the original oregon trail has 4 characters in your "party"
+
+    
