@@ -2,7 +2,7 @@
     
     Authors:
         Kevin Blinn (KJBLINN01)
-        Braden Kroll (ENTER GITHUB NAME HERE)
+        Braden Kroll (bkroll25)
         Joseph Laudati (0OpTiX0)
 
     Date Started: 
