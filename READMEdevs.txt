@@ -47,7 +47,7 @@
     to find a their former home in ruins. Determined to find his wife Jane after receiving a radio
     transmission claiming sanctuary in Portland. Along the way he makes various and consequential 
     decisions to get there and ends up discovering that the sanctuary in Portland is overrun by
-    raiders. He then finds out that the surviors evacuated to Tacoma where a determined Jones 
+    raiders. He then finds out that the survivors evacuated to Tacoma where a determined Jones 
     will eventually find his wife. (GOOD ENDING).
 
 
@@ -66,7 +66,7 @@
     Determined to find his wife, Jones and his kids set off to find Jane. Along the way he meets sentient robot named D4V3 
     or Dave for short. With Dave, the family ends up discovering that society still exists in Anchorage Alaska and are only
     accepting families as residents. Determined to find this society and his wife, the family continues on their journey.
-    they finally arive in Protland only to find the settlement overrun by raiders. Discovering that there are surviors in
+    they finally arrive in Portland only to find the settlement overrun by raiders. Discovering that there are survivors in
     Tacoma, the family continues until they all reunite in a small fortified base. With D4V3, they continue north and
     arrive in Anchorage where they finally can rest and resume their lives like 11 months before. (BEST ENDING)
 
@@ -74,11 +74,9 @@
     Determined to find his wife, Jones and his kids set off to find Jane. Along the way he meets sentient robot named D4V3 
     or Dave for short. With Dave, the family ends up discovering that society still exists in Anchorage Alaska and are only
     accepting families as residents. Determined to find this society and his wife, the family continues on their journey.
-    they finally arive in Protland only to find the settlement overrun by raiders. Discovering that there are surviors in
+    they finally arrive in Portland only to find the settlement overrun by raiders. Discovering that there are survivors in
     Tacoma, the family continues until they all reunite in a small fortified base. With D4V3's knowledge, they begin their 
     trek to Anchorage. Little did they know, the journey would be too perilous and are lost only for D4V3 to return to 
-    Anchorage alone. D4V3 would tell the tale of a brave survior name Jones and how he couragously traversed continental
+    Anchorage alone. D4V3 would tell the tale of a brave survivor name Jones and how he courageously traversed continental
     US to find his long lost wife... (LOST LEGEND ENDING)
-    
-
-
+//----------------------------------------------------------------------------// 
