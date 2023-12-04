@@ -15,11 +15,21 @@
 using namespace std;
 
 int main() {
-    //V random seed for dice V
+    
     random_device rd;
     mt19937 gen(rd());
 
-    //somewhere we can start..
+    
+    cout<<"__________________   __________________    __________________    _______  _______       "<<endl;
+    cout<<"|_____      _____|   |     ---------   |   |   _____________|    |      \\/       |      "<<endl;
+    cout<<"      |    |         |      ______    <    |   _____________|    |             <        "<<endl;   
+    cout<<"      |____|         |____|       \\____|   |________________|    |______/\\_______|      "<<endl;
+    cout<<"\n\n                     THE ROLEPLAYING ADVENTURE GAME"<<endl;
+    cout<<"\n\n                          PRESS ENTER TO START"<<endl;
+
+
+
+
     
     
 
