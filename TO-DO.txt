@@ -4,9 +4,11 @@ Player Object:
     Constructor
     Character Creation
 
-    Joseph: I think there should be skills based on Fallout's SPECIAL system with some added
-    perks. For extras we could have Mechanical Ability (for Vehicles), Composure for stress management, and etc.
-    We should also consider adding a Thirst, Hunger, and body temperature stat to keep players aware that they
+    Joseph: I think there should be skills based on Fallout's SPECIAL system 
+    with some added perks. For extras we could have Mechanical Ability 
+    (for Vehicles), Composure for stress management, and etc.
+    We should also consider adding a Thirst, Hunger, 
+    and body temperature stat to keep players aware that they
     need to feed and shelter their character.
 
 
@@ -19,34 +21,45 @@ Player Object:
 
 Game:
 
-    ///////Joseph's take : We can discuss an end goal later but Id like the game to be about reaching a destination. That 
-    destination can be multiple places as reaching there will be based on the player's choices. Example:
-    "PlayerA chose to be pacifistic in their journey and ended up settling in a remote village in canada where
-    zombies cant reach due to the cold weather. THE END" or "PlayerA ended up finding an abandoned football stadium
-    where he founded a town that would be a safe haven for travelers. That place is now called Tiger Town. THE END"
+    ///////Joseph's take : We can discuss an end goal later but Id like the 
+    game to be about reaching a destination. That destination can be multiple 
+    places as reaching there will be based on the player's choices. Example: 
+    "PlayerA chose to be pacifistic in their journey and ended up settling in a
+    remote village in canada where zombies cant reach due to the cold weather. 
+    THE END" or "PlayerA ended up finding an abandoned football stadium where 
+    he founded a town that would be a safe haven for travelers. That place is 
+    now called Tiger Town. THE END"
 
-    The *chance system* should be influenced by the player's stats. Say if the player's STR stat is high and they
-    needed to lift a stuck garage door. They would have a 90% chance of success where a player with a low STR stat 
-    would have a 30% chance of success. We can discuss more on how this could work if needed.
+    The *chance system* should be influenced by the player's stats. Say if the
+    player's STR stat is high and they needed to lift a stuck garage door. They 
+    would have a 90% chance of success where a player with a low STR stat 
+    would have a 30% chance of success. We can discuss more on how this could 
+    work if needed.
 
-    *Vehicles* could help the player on their journey BUT should be limited. There should be a chance of a 
-    car part failing or a chance that they could run out of gas before reaching a destination. LUCK and MECH stats 
-    can be useful here as the character would need the skills to find gas or repair their vehicle.
+    *Vehicles* could help the player on their journey BUT should be limited. 
+    There should be a chance of a car part failing or a chance that they 
+    could run out of gas before reaching a destination. LUCK and MECH stats 
+    can be useful here as the character would need the skills to find gas or 
+    repair their vehicle.
 
-    *Shops* are useful but should be a risk. In a post apocalyptic world, raiders could be posing as shop keeps trying
-    to lure survivors to their doom. This is where the PERCPT and LUCK stats could come in. In the case of an actual shop 
-    and currency system, the character should try and
-    collect a currency throughout their journey so that they can afford supplies. Shops should be a one and done thing
+    *Shops* are useful but should be a risk. In a post apocalyptic world, 
+    raiders could be posing as shop keeps trying to lure survivors to 
+    their doom. This is where the PERCPT and LUCK stats could come in. 
+    In the case of an actual shop and currency system, the character 
+    should try and collect a currency throughout their journey so that
+     they can afford supplies. Shops should be a one and done thing
     found along their journey.
 
     There is no going back... (0 v 0) 
                                 |||
 
-    *Bases* Checkpoints should be critical as they should be a way for the player to go back to a checkpoint if they
-    die. Because this game should be a one way linear system (If we decide on it) players should no longer be able to
-    return to previous checkpoints however I think that it would be smart by allowing the player to explore the vicinity
-    of their base to search for supplies. If they wish to continue on their journey, the game should warn them of 
-    their inability to return. 
+    *Bases* Checkpoints should be critical as they should be a way for the 
+    player to go back to a checkpoint if they die. Because this game should
+    be a one way linear system (If we decide on it) players should no longer 
+    be able to return to previous checkpoints however I think that it would be 
+    smart by allowing the player to explore the vicinity of their base to 
+    search for supplies. If they wish to continue on 
+    their journey, the game should warn them of their inability to return. 
 
     \\\\\\\\\\\\
 
@@ -65,34 +78,46 @@ Misc:
 
 Questions:
 
-    Joseph: I like the idea of random generation but i also like Fallout's system. Depending on how y'all feel about it, The endings 
-    can be more dynamic if we decide to go with random generation. However if you prefer to have a more linear system, we could choose
-    player choice. On the topic of range, I like the idea of 0 being a neutral and the concept of being bad at something. We could 
-    possibly have a range between -10 and 10 with -10 being terrible at something and 10 being good at something. Debuffs should 
-    alter stats based on the context of them. For instance: Having a sickness would be a STR -2 PERCPT-3 CHRIS-5 because you'd be 
-    weakened and becuause of lack of modern medicine nobody would want to be around you. Classes are also a good idea. 
+    Joseph: I like the idea of random generation but i also like Fallout's 
+    system. Depending on how y'all feel about it, The endings can be more 
+    dynamic if we decide to go with random generation. However if you prefer to 
+    have a more linear system, we could choose player choice. On the topic of 
+    range, I like the idea of 0 being a neutral and the concept of being bad 
+    at something. We could possibly have a range between -10 and 10 with -10 
+    being terrible at something and 10 being good at something. Debuffs should 
+    alter stats based on the context of them. For instance: Having a sickness 
+    would be a STR -2 PERCPT-3 CHRIS-5 because you'd be weakened and becuause 
+    of lack of modern medicine nobody would want to be around you. 
+    Classes are also a good idea. 
 
 
     
 
 
     How will stat generation work? 
-        Dnd has several ways, including random generation, point buy and standard array.
-        Most video games have the player set it themselves (Like Fallout)
-        Another potential way is character classes, with each class having good stats and bad stats
+        Dnd has several ways, including random generation, point buy and standard 
+        array.Most video games have the player set it themselves (Like Fallout)
+        Another potential way is character classes, with each class having good 
+        stats and bad stats
     
 
 
     What is the range of stats?
-        I.e: what is the minimum in a stat vs the max, Dnd is 1 - 20, some games I've seen do 0 - 10, some do -5 - 5 (negatives meaning they are bad at a skill)
+        I.e: what is the minimum in a stat vs the max, Dnd is 1 - 20, some 
+        games I've seen do 0 - 10, some do -5 - 5 (negatives meaning they 
+        are bad at a skill)
    
 
-   Joseph: I think that the player should control one person. Side characters should have a set story path that is based off the 
-   choices that the player makes. Ex: If you're mean to a character or do things that a side character dislikes, the higher the 
-   chances that they could leave you or betray you and vice versa. I thing the MC should meet certain characters along
-   their journey by making specific choices that would be deemed acceptable to them. NO ROMANCE. ROMANCE STORIES ARE CRINGE. 
-   I think the party limit should be 4 like the oregon trail. There should be negatives to having a large party like resource 
-   consumption and unwanted attention.
+    Joseph: I think that the player should control one person. Side characters
+    should have a set story path that is based off the choices that the player 
+    makes. Ex: If you're mean to a character or do things that a side 
+    character dislikes, the higher the chances that they could leave you or 
+    betray you and vice versa. I thing the MC should meet certain characters 
+    along their journey by making specific choices that would be 
+    deemed acceptable to them. NO ROMANCE. ROMANCE STORIES ARE CRINGE. 
+    I think the party limit should be 4 like the oregon trail. There should
+    be negatives to having a large party like resource 
+    consumption and unwanted attention.
 
 
     How many characters can the player control? 
