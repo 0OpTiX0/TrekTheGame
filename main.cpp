@@ -12,6 +12,8 @@
 #include <chrono>
 #include <random>
 
+#include "player.h"
+
 using namespace std;
 
 int main() {
@@ -24,14 +26,15 @@ int main() {
     cout<<"|_____      _____|   |     ---------   |   |   _____________|    |      \\/       |      "<<endl;
     cout<<"      |    |         |      ______    <    |   _____________|    |             <        "<<endl;   
     cout<<"      |____|         |____|       \\____|   |________________|    |______/\\_______|      "<<endl;
-    cout<<"\n\n                     THE ROLEPLAYING ADVENTURE GAME"<<endl;
+    cout<<"\n\n                     THE ROLE-PLAYING ADVENTURE GAME"<<endl;
     cout<<"\n\n                          PRESS ENTER TO START"<<endl;
 
 
 
+    
 
-    
-    
+    player character;
+    character.createPlayer();
 
 
 
