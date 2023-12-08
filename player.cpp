@@ -2,16 +2,21 @@
 
 using namespace std;
 
-//Creates the Player 
-//(Might be a good idea to put this function into a separate file (game file?) and implement this into a constructor)
-void player::createPlayer(){
-    cout<<"Lets start your character creation!"<<endl;
-
-    //Taking in variables:
-    cout<<"Please type your name:"<<endl;
-    cin>>this->name;
-    
-    //PUT STATS OR CLASS INPUT HERE
-
-
+//Constructors:
+//Default:
+player::player(){
+    this->name = "John Doe";
 }
+
+//Constructor with parameters:
+player::player(string aName, int aStre, int aIntell, int aPerc, int aEndur, int aCharis, int aAgil, int aLuck){
+    this->name = aName;
+    this->strength = aStre;
+    this->intelligence = aIntell;
+    this->perception = aPerc;
+    this->endurance = aEndur;
+    this->charisma = aCharis;
+    this->agility = aAgil;
+    this->luck = aLuck;
+}
+
