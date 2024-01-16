@@ -11,6 +11,7 @@
 #include <algorithm>
 #include <chrono>
 #include <random>
+#include <thread>
 
 #include "player.h"
 
@@ -20,6 +21,9 @@ int main() {
     
     random_device rd;
     mt19937 gen(rd());
+    string enterbutton;
+    string usrName;
+    
 
     
     cout<<"__________________   __________________    __________________    _______  _______       "<<endl;
@@ -29,8 +33,22 @@ int main() {
     cout<<"\n\n                     THE ROLE-PLAYING ADVENTURE GAME"<<endl;
     cout<<"\n\n                          PRESS ENTER TO START"<<endl;
 
+    cin>> enterbutton;
+    enterbutton = "1";
+
+    cout<<"\n\n\n\n\n\n";    
+    
+    if (enterbutton == "1") {
+    cout << "Loading..." << endl;
+    this_thread::sleep_for(chrono::seconds(3));
+}
+    
+    cout<<"\n\n\n\n\n\n";    
 
 
+    cout<< "Welcome "<<usrName<< " to TREK. This game is soley based on your choices."<<endl;
+    cout<< "What you choose from even character creation will impact your ending."<<endl;
+    cout<< "Choose well and good luck!"<<endl;
     
 
     player character;
