@@ -49,6 +49,18 @@ int main() {
     cout<< "Welcome "<<usrName<< " to TREK. This game is soley based on your choices."<<endl;
     cout<< "What you choose from even character creation will impact your ending."<<endl;
     cout<< "Choose well and good luck!"<<endl;
+
+
+    //Suggestion by joseph:
+
+    // What if we tried making our story procedually generated?
+    // using the chance system we discussed for the game, what 
+    // if we could use the same system for the generation of our story!
+    // For instance, our model is given 4 genre options to choose from. 
+    // once the playre hits "enter", the computer will choose a random genre
+    // from a pool to generate the story that way the player can always have a
+    // different experience! This may be above our skill level but it's something
+    // look into.
     
 
     player character;
