@@ -61,7 +61,11 @@ int main() {
     // from a pool to generate the story that way the player can always have a
     // different experience! This may be above our skill level but it's something
     // look into.
-    
+
+    //Braden Thoughts:
+    //By procedural generation do you mean by AI? Or just having different genres?
+    //I wouldn't mind working with AI on it but I don't know how it would turn out.
+    //We could always do two modes, selected at the beginning: "Press 1 for man-made story 2 for AI story"
 
     player character;
     character.createPlayer();
