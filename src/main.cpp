@@ -67,6 +67,8 @@ int main() {
     //I wouldn't mind working with AI on it but I don't know how it would turn out.
     //We could always do two modes, selected at the beginning: "Press 1 for man-made story 2 for AI story"
 
+    //Joseph: 2
+
     player character;
     character.createPlayer();
 
