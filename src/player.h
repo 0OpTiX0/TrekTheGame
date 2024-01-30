@@ -16,18 +16,14 @@ class player{
 
 public:
     player();
+    //constructor se.
+    player(){ name = "default"; strength = 0; intelligence = 0; perception = 0; endurance = 0; charisma = 0; agility = 0; luck = 0;};
 
-    // Too tired to implement, need to figure out how to get template class to take in
-    // different datatypes...
-    player();
-    T getInfo(string x);
-    T getInfo(int x)
-
-    string name;
+  
 
     //Stats:
     //For now stats will have a range of -5 to +5
-
+    string name;
     int strength;
     int intelligence;
     int perception;
