@@ -1,11 +1,14 @@
 #Makefile for Travel Game:
 
-compile:
-	g++ main.cpp player.cpp player.h -Wall -o game.exe
+compile: game.out
 
-run:
-	./game.exe
+run: game.out
+	./game.out
 
-clear:
-	rm game.exe
+game.out: main.cpp game.cpp player.cpp
+	g++ main.cpp game.cpp player.cpp -o game.out
+
+clean:
+	rm -f game.out
+
 

@@ -14,6 +14,7 @@
 #include <thread>
 
 #include "player.h"
+#include "game.h"
 
 using namespace std;
 
@@ -22,16 +23,17 @@ int main() {
     random_device rd;
     mt19937 gen(rd());
     string enterbutton;
-    string usrName;
+    string difficulty;
+    
     
 
     
     cout<<"__________________   __________________    __________________    _______  _______       "<<endl;
-    cout<<"|_____      _____|   |     ---------   |   |   _____________|    |      \\/       |      "<<endl;
+    cout<<"|_____      _____|   |     -------     |   |   _____________|    |      \\/       |      "<<endl;
     cout<<"      |    |         |      ______    <    |   _____________|    |             <        "<<endl;   
     cout<<"      |____|         |____|       \\____|   |________________|    |______/\\_______|      "<<endl;
     cout<<"\n\n                     THE ROLE-PLAYING ADVENTURE GAME"<<endl;
-    cout<<"\n\n                          PRESS ENTER TO START"<<endl;
+    cout<<"\n\n                      PRESS '1' and 'Enter' TO START"<<endl;
 
     cin>> enterbutton;
     enterbutton = "1";
@@ -46,8 +48,8 @@ int main() {
     cout<<"\n\n\n\n\n\n";    
 
 
-    cout<< "Welcome "<<usrName<< " to TREK. This game is soley based on your choices."<<endl;
-    cout<< "What you choose from even character creation will impact your ending."<<endl;
+    cout<< "Welcome survivor to TREK. This game is soley based on your choices."<<endl;
+    cout<< "What you choose throughout the game will impact your ending."<<endl;
     cout<< "Choose well and good luck!"<<endl;
 
 
@@ -72,9 +74,23 @@ int main() {
 
 
 
+    
 
-    player character;
-    character.createPlayer();
+    game g1;
+
+    // Suggestion from Joseph: I dont think there is a need to include character 
+    // creation in game.cpp. I think it would be best if the character should 
+    // be created in the player.h file. That way we can use a template class to handle
+    // the different input as well as having a file dedicated to the character. 
+    // I found some issues with the pointer method i.e. bkroll11 implemented.
+    // failure to detect chars and strings and as well as out-of-bounds 
+    // scenarios which can be fixed with the template class method and even
+    // just implementing some standard condtinals. Will continue working on this tmmr.
+    
+
+
+
+    
 
 
 
