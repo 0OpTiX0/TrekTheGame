@@ -15,9 +15,9 @@ template <class T>
 class player{
 
 public:
-    player();
-    //constructor se.
-    player(){ name = "default"; strength = 0; intelligence = 0; perception = 0; endurance = 0; charisma = 0; agility = 0; luck = 0;};
+
+    player(){ name = "default"; strength = 0; intelligence = 0; 
+    perception = 0; endurance = 0; charisma = 0; agility = 0; luck = 0;};
 
   
 

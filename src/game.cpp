@@ -2,8 +2,6 @@
 
 using namespace std;
 
-template <class T> T item;
-
 
 //Main function, calls all other functions:
 void game::playGame(){

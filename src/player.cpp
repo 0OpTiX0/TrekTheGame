@@ -5,7 +5,8 @@ using namespace std;
 //this should get information for the stats
 template <typename T>
 T setInfor(int x){
-return x;
+    x = mainChar.strength;
+    
 }
 
 
