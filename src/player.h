@@ -13,33 +13,26 @@ using namespace std;
 
 template <class T>
 class player{
+    private:
+        string playerName = 0;
+        float luck = 0;
+        float strength = 0;
+        float intelligence = 0;
+        float endurance = 0;
+    public:
+        player();
+        void setName(string &n);
+        void setLuck(float &l);
+        void setStrength(float &s);
+        void setIntellig(float &i);
+        void setEnduranc(foat &e);
 
-public:
-
-    player(){ name = "default"; strength = 0; intelligence = 0; 
-    perception = 0; endurance = 0; charisma = 0; agility = 0; luck = 0;};
-
-  
-
-    //Stats:
-    //For now stats will have a range of -5 to +5
-    string name;
-    int strength;
-    int intelligence;
-    int perception;
-    int endurance;
-    int charisma;
-    int agility;
-    int luck;
-
-
-
-private:
-
+        string getName();
+        float getLuck();
+        float getStrength();
+        float getIntellig();
+        float getEnduranc();
     
-
-
-
 
 
 };
