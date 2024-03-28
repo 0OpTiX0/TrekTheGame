@@ -18,6 +18,7 @@ class player{
         float strength;
         float intelligence;
         float endurance;
+        double health;
     public:
         player();
         void setName(string &n);
@@ -26,6 +27,7 @@ class player{
         void setIntellig(float &i);
         void setEnduranc(float &e);
         void changeStat(string &t, float &cs);
+        double alterHealth(double &cs);
         
 
         string getName();
@@ -33,6 +35,7 @@ class player{
         float getStrength();
         float getIntellig();
         float getEnduranc();
+        double getHealth();
     
 
 

@@ -15,14 +15,19 @@ using namespace std;
 //This Class is to manage the the game. 
 //It will have the main function and helper functions to run the game.
 class game{
+
+    private:
+        player mainChar;
+        
     
-public:
-    void playGame();
+    public:
+        void playGame();
+        void event();
+    
+
 
     
 
-private:
-    player mainChar;
 
 };
 

@@ -94,6 +94,15 @@ void player::changeStat(string &t, float &cs){
         cout<<"LV MAX"<<endl;
         return;
     }
+
+    // stating heath is 20 and increments by 25 per level
+    // max lv health is 200. Implement this limit and allow it to be changed per lv up. alterHealth() and getHealth()
+    // need to be created and implemented. alterHealth() has a max range of 0-max and can be changed when a player
+    // heals and takes damage. 
+
+
+
+
     //if lv is not maxed, lv is changed. IF lv change goes over boundary, the value is set to max value.
     else{
 
@@ -166,6 +175,11 @@ void player::changeStat(string &t, float &cs){
             }
         }
     }
+}
+
+double player::alterHealth(double &cs){
+
+
 }
 
 
