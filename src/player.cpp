@@ -147,19 +147,18 @@ void player::changeStat(string &t, float &cs){
     }
 }
 
+//This will be used in states where heath is being manipulated.
 double player::alterHealth(double &cs){
-    int currentMAX = 0;
+    int currentMAX;
+    const int MINIMUM = 0;
 
     // stating heath is 25 and increments by 25 per level
     // max lv health is 100. Implement this limit and allow it to be changed per lv up. alterHealth() and getHealth()
     // need to be created and implemented. alterHealth() has a max range of 0-max and can be changed when a player
     // heals and takes damage. 
 
-    //keeps health in bounds so erors dont occur.
-    if (health > currentMAX || health < 0){
-        cerr<<"ERROR: HEALTH OUT OF BOUNDS"<<endl;
-        return;
-    }
+
+    // player's maximum health is determined via their level.
     if (getPlayerLv() == 1){
         currentMAX = 25;
     }
@@ -173,13 +172,30 @@ double player::alterHealth(double &cs){
         currentMAX = 100;
     }
 
-    
-    
+    //keeps health in bounds so erors dont occur.
+    if (health > currentMAX || health < MINIMUM){
+        cerr<<"ERROR: HEALTH OUT OF BOUNDS"<<endl;
+        return 1001;
+    }
 
+    //damage condition that also ensures tha the health boundaries arent violated.
+    if (cs < 0){
+       health -= cs;
+        if(health < MINIMUM){
+            health = MINIMUM;
+        }
+    }
 
+    //healing condition that also ensures that the health boundaries arent violated.
+    if (cs > 0){
+        health += cs;
+        if(health > currentMAX){
+            health = currentMAX;
+        }
+    }
     
     
-
+    return health;
 
 }
 
