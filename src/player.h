@@ -20,6 +20,7 @@ class player{
         float endurance;
         double health;
         int level;
+        double experience;
     public:
         player();
         void setName(string &n);
@@ -28,8 +29,10 @@ class player{
         void setIntellig(float &i);
         void setEnduranc(float &e);
         void changeStat(string &t, float &cs);
-        void setPlayerLv(int &lv);
+        void setPlayerLv(int lv);
         double alterHealth(double &cs);
+        void changeExp(double &exp);
+        
 
         
 
@@ -40,6 +43,7 @@ class player{
         float getEnduranc();
         double getHealth();
         int getPlayerLv();
+        double getExp();
     
 
 

@@ -14,6 +14,8 @@ player::player(){
     strength = 0;
     level = 1;
     health = 25;
+    experience = 0;
+    
 }
 
 
@@ -72,6 +74,8 @@ void player::setStrength(float &s){
 
     strength = s;
 }
+
+
 
 
 //changes player stat values in game
@@ -149,8 +153,10 @@ void player::changeStat(string &t, float &cs){
 
 //This will be used in states where heath is being manipulated.
 double player::alterHealth(double &cs){
-    int currentMAX;
+    int currentMAX = 25;
     const int MINIMUM = 0;
+  
+
 
     // stating heath is 25 and increments by 25 per level
     // max lv health is 100. Implement this limit and allow it to be changed per lv up. alterHealth() and getHealth()
@@ -159,18 +165,7 @@ double player::alterHealth(double &cs){
 
 
     // player's maximum health is determined via their level.
-    if (getPlayerLv() == 1){
-        currentMAX = 25;
-    }
-    else if(getPlayerLv() == 2){
-        currentMAX = 50;
-    }
-    else if(getPlayerLv() == 3){
-        currentMAX = 75;
-    }
-    else if(getPlayerLv() == 4){
-        currentMAX = 100;
-    }
+    
 
     //keeps health in bounds so erors dont occur.
     if (health > currentMAX || health < MINIMUM){
@@ -199,10 +194,38 @@ double player::alterHealth(double &cs){
 
 }
 
-void player::setPlayerLv(int &lv){
-    level = lv;
+void player::setPlayerLv(int lv){
+    if(level <10){
+        cout<< "LEVEL MAX!"<<endl;
+    }else{
+        level =+ lv;
+    }
+
+
 }
 
+void player::changeExp(double &exp){
+    ;
+    const double MINIMUM = 0;
+    //max exp is calculated based on player level. It is 10x the level. (1; 100)
+    double maxExp = static_cast<double>(level) * 100;
+
+    if (maxExp < 0){
+        cerr<< "ERROR: EXP OUT OF BOUNDS"<<endl;
+        return;
+    }
+    //when a player gains exp, it is simply added to the current exp.
+    experience += exp;
+    
+    
+
+    //when a player levels up, the level is incremented and the current exp is set to 0.
+    if(experience >= maxExp){
+        cout<<"LEVEL UP"<<endl;
+        setPlayerLv(1);
+        experience = MINIMUM;
+    }
+}
 
 
 
@@ -248,5 +271,8 @@ int player::getPlayerLv(){
     return level;
 }
 
+double player::getExp(){
+    return experience;
+}
 
 
