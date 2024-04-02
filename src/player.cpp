@@ -14,17 +14,12 @@ player::player(){
     strength = 0;
     level = 1;
     health = 25;
+    maxHealth = 25;
     experience = 0;
     
 }
 
-
-
-
-
 //Setters~~~~~~~~~~~
-
-
 
 //Sets playername to user selected string at beginning of the game.
 void player::setName(string &n){
@@ -74,9 +69,6 @@ void player::setStrength(float &s){
 
     strength = s;
 }
-
-
-
 
 //changes player stat values in game
 void player::changeStat(string &t, float &cs){
@@ -153,9 +145,9 @@ void player::changeStat(string &t, float &cs){
 
 //This will be used in states where heath is being manipulated.
 double player::alterHealth(double &cs){
-    int currentMAX = 25;
+    maxHealth = getMaxHealth();
     const int MINIMUM = 0;
-  
+
 
 
     // stating heath is 25 and increments by 25 per level
@@ -168,44 +160,60 @@ double player::alterHealth(double &cs){
     
 
     //keeps health in bounds so erors dont occur.
-    if (health > currentMAX || health < MINIMUM){
+    if (health > maxHealth || health < MINIMUM){
         cerr<<"ERROR: HEALTH OUT OF BOUNDS"<<endl;
         return 1001;
     }
 
     //damage condition that also ensures tha the health boundaries arent violated.
     if (cs < 0){
-       health -= cs;
-        if(health < MINIMUM){
+        health += cs;
+     
+        if(health <= MINIMUM){
             health = MINIMUM;
+            cout<<"DEATH STATE"<<endl;
+            return MINIMUM;
         }
+
     }
 
     //healing condition that also ensures that the health boundaries arent violated.
     if (cs > 0){
         health += cs;
-        if(health > currentMAX){
-            health = currentMAX;
+
+        if(health >= maxHealth){
+            health = maxHealth;
+            cout <<"FULL HEALTH"<<endl;
+            return maxHealth;
         }
     }
+
+   
     
     
     return health;
 
 }
 
+void player::setMaxHealth(double h){
+    maxHealth = maxHealth+h;
+}
+
+double player::getMaxHealth(){
+    return maxHealth;
+}
+
+
 void player::setPlayerLv(int lv){
-    if(level <10){
+    if(level >10){
         cout<< "LEVEL MAX!"<<endl;
     }else{
-        level =+ lv;
+        level += lv;
     }
-
-
 }
 
 void player::changeExp(double &exp){
-    ;
+
     const double MINIMUM = 0;
     //max exp is calculated based on player level. It is 10x the level. (1; 100)
     double maxExp = static_cast<double>(level) * 100;
@@ -223,6 +231,8 @@ void player::changeExp(double &exp){
     if(experience >= maxExp){
         cout<<"LEVEL UP"<<endl;
         setPlayerLv(1);
+        setMaxHealth(25);
+        health = maxHealth;
         experience = MINIMUM;
     }
 }
@@ -267,9 +277,7 @@ double player::getHealth(){
     return health;
 }
 //sends player level elsewhere
-int player::getPlayerLv(){
-    return level;
-}
+
 
 double player::getExp(){
     return experience;

@@ -19,80 +19,102 @@
 using namespace std;
 
 int main() {
-    
-    random_device rd;
-    mt19937 gen(rd());
-    string enterbutton;
-    string difficulty;
-    
-    
-
-    
-    cout<<"__________________   __________________    __________________    _______  _______       "<<endl;
-    cout<<"|_____      _____|   |     -------     |   |   _____________|    |      \\/       |      "<<endl;
-    cout<<"      |    |         |      ______    <    |   _____________|    |             <        "<<endl;   
-    cout<<"      |____|         |____|       \\____|   |________________|    |______/\\_______|      "<<endl;
-    cout<<"\n\n                     THE ROLE-PLAYING ADVENTURE GAME"<<endl;
-    cout<<"\n\n                      PRESS '1' and 'Enter' TO START"<<endl;
-
-    cin>> enterbutton;
-    enterbutton = "1";
-
-    cout<<"\n\n\n\n\n\n";    
-    
-    if (enterbutton == "1") {
-    cout << "Loading..." << endl;
-    this_thread::sleep_for(chrono::seconds(3));
-}
-    
-    cout<<"\n\n\n\n\n\n";    
+    player mainChar;
+    float x = 1.5 ;
+    double z = 5.5;
+    string y = "joseph";
 
 
-    cout<< "Welcome survivor to TREK. This game is soley based on your choices."<<endl;
-    cout<< "What you choose throughout the game will impact your ending."<<endl;
-    cout<< "Choose well and good luck!"<<endl;
+    //this simulates a player being created.
 
 
-    //Suggestion by joseph:
+    mainChar.setName(y);
+    mainChar.setStrength(x);
+    mainChar.setEnduranc(x);
+    mainChar.setIntellig(x);
+    mainChar.setLuck(x);
+    mainChar.setPlayerLv(0);
 
-    // What if we tried making our story procedually generated?
-    // using the chance system we discussed for the game, what 
-    // if we could use the same system for the generation of our story!
-    // For instance, our model is given 4 genre options to choose from. 
-    // once the playre hits "enter", the computer will choose a random genre
-    // from a pool to generate the story that way the player can always have a
-    // different experience! This may be above our skill level but it's something
-    // look into.
-
-    //Braden Thoughts:
-    //By procedural generation do you mean by AI? Or just having different genres?
-    //I wouldn't mind working with AI on it but I don't know how it would turn out.
-    //We could always do two modes, selected at the beginning: "Press 1 for man-made story 2 for AI story"
-
-    //Joseph: 2
-
+    cout<< "Name: "<<mainChar.getName()<<endl;
+    cout<< "Strength: "<<mainChar.getStrength()<<endl;
+    cout<< "Endurance: "<<mainChar.getEnduranc()<<endl;
+    cout<< "Intelligence: "<<mainChar.getIntellig()<<endl;
+    cout<< "Luck: "<<mainChar.getLuck()<<endl;
+    cout<< "Level: "<<mainChar.getPlayerLv()<<endl;
 
 
 
     
+    //this will simulate a player gaining xp and leveling up.
 
-    game g1;
+    /*
 
-    // Suggestion from Joseph: I dont think there is a need to include character 
-    // creation in game.cpp. I think it would be best if the character should 
-    // be created in the player.h file. That way we can use a template class to handle
-    // the different input as well as having a file dedicated to the character. 
-    // I found some issues with the pointer method i.e. bkroll11 implemented.
-    // failure to detect chars and strings and as well as out-of-bounds 
-    // scenarios which can be fixed with the template class method and even
-    // just implementing some standard condtinals. Will continue working on this tmmr.
+    cout<<endl<<endl;
+    cout<<"simulating xp increase."<<endl;
+    cout<< "current XP: "<<mainChar.getExp()<< "/"<<mainChar.getPlayerLv()*100<<endl;
+    
+    mainChar.changeExp(z);
+
+    cout<< "current XP: "<<mainChar.getExp()<< "/"<<mainChar.getPlayerLv()*100<<endl;
+    cout<<endl<<endl;
+    cout<<"simulating level up"<<endl;
+
+    z = 200.0;
+    
+    cout<< "current XP: "<<mainChar.getExp()<< "/"<<mainChar.getPlayerLv()*100<<endl<<endl;
+
+    cout<<"+200 XP"<<endl;
+    mainChar.changeExp(z);
+    
+    cout<< "current XP: "<<mainChar.getExp()<< "/"<<mainChar.getPlayerLv()*100<<endl;
+    cout<<"Player Level: "<<mainChar.getPlayerLv()<<endl;
+
+    */
+
+
+
+   //this will simulate a player gaining HP and losing HP.
+
+cout<<endl<<endl;
+cout<<"simulating HP."<<endl;
+
+double h = 5.0;
+double d = -25.0;
+
+cout<< "current HP: "<<mainChar.getHealth()<< "/"<< mainChar.getMaxHealth()<<endl;
+
+
+
+z = 200.0;
     
 
 
+cout<<"+200 XP"<<endl;
+mainChar.changeExp(z);
+
+cout<< "current HP: "<<mainChar.getHealth()<< "/"<< mainChar.getMaxHealth()<<endl;
+
+
+cout<<endl<<endl;
+cout<<"simulating damage. after level up"<<endl;
+
+
+
+
+
+cout<<"-25 HP"<<endl;
+mainChar.alterHealth(d);
+cout<< "current HP: "<<mainChar.getHealth()<<endl;
+
+
+
+
+
+
+
+
+
+
 
     
-
-
-
-    return 0;
 }

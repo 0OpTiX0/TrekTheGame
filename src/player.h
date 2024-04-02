@@ -21,6 +21,7 @@ class player{
         double health;
         int level;
         double experience;
+        double maxHealth;
     public:
         player();
         void setName(string &n);
@@ -32,6 +33,7 @@ class player{
         void setPlayerLv(int lv);
         double alterHealth(double &cs);
         void changeExp(double &exp);
+        void setMaxHealth(double h);
         
 
         
@@ -44,6 +46,7 @@ class player{
         double getHealth();
         int getPlayerLv();
         double getExp();
+        double getMaxHealth();
     
 
 
