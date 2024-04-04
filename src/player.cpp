@@ -168,7 +168,6 @@ double player::alterHealth(double &cs){
     //damage condition that also ensures tha the health boundaries arent violated.
     if (cs < 0){
         health += cs;
-     
         if(health <= MINIMUM){
             health = MINIMUM;
             cout<<"DEATH STATE"<<endl;
@@ -188,11 +187,7 @@ double player::alterHealth(double &cs){
         }
     }
 
-   
-    
-    
     return health;
-
 }
 
 void player::setMaxHealth(double h){
@@ -205,11 +200,17 @@ double player::getMaxHealth(){
 
 
 void player::setPlayerLv(int lv){
-    if(level >10){
-        cout<< "LEVEL MAX!"<<endl;
-    }else{
-        level += lv;
+    level += lv;
+    if (level <= 0){
+        cout<< "LEVEL OUT OF BOUNDS, DEBUG IMMEDIATELY"<<endl;
+        level = 1;
     }
+    
+    if(level >= 10){
+        cout<< "LEVEL MAX!"<<endl;
+        level = 10;
+    }
+    
 }
 
 void player::changeExp(double &exp){
@@ -230,7 +231,9 @@ void player::changeExp(double &exp){
     //when a player levels up, the level is incremented and the current exp is set to 0.
     if(experience >= maxExp){
         cout<<"LEVEL UP"<<endl;
+        //this will increase the player's level by 1. THIS SHOULD NEVER BE NEGATIVE!
         setPlayerLv(1);
+        // this will increase the player's health by 25.
         setMaxHealth(25);
         health = maxHealth;
         experience = MINIMUM;
