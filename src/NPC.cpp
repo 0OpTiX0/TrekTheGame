@@ -4,9 +4,27 @@
 #include <algorithm>
 #include <random>
 #include "NPC.h"
+#include "player.h"
 
 
 using namespace std;
+
+/*
+    string name; 
+    float maxHealth;
+    float health;
+    int level;
+    string type;
+*/
+
+NPC::NPC(){
+    name = "ENEMY_X";
+    maxHealth = 20.0;
+    health = maxHealth;
+    type = "DEFAULT";
+    level = 0;
+}
+
 
 
 void NPC::setName(string &n){
@@ -41,6 +59,41 @@ void NPC::setLevel(int & pl){
 
 
 }
+
+
+    // There are three enemy types: minor, medium, and major. Major will have the most health and attack power,
+    // medium will have a balanced set of health and attack power, and minor will have the least amound of 
+    // health and attack power. Majors will have 2.5x the health and 1.5x the attack power as the player.Mediums
+    // will have 2x the health and 1.25x the attack power of the player. Minors will have 1.5x the health and 1x
+    // the attack power of the player.
+
+void NPC::setType(string t){
+
+    if(t == "minor"){
+        
+
+
+    }
+
+}
+
+void NPC::setHealth(float &h){
+
+
+}
+
+
+void NPC::setMaxHealth(float &n){
+
+
+}
+
+
+
+
+
+
+
 
 
 //work on health, defense, class and attack method for NPC (for character work on attack method as well!)

@@ -18,10 +18,10 @@ class player{
         float strength;
         float intelligence;
         float endurance;
-        double health;
-        int level;
+        double pHealth;
+        int pLevel;
         double experience;
-        double maxHealth;
+        double pMaxHealth;
     public:
         player();
         void setName(string &n);

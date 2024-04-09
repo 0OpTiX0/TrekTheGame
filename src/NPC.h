@@ -1,16 +1,18 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "player.h"
 
 using namespace std;
 
 class NPC{
     private:
         string name; 
-        float maxHeath;
+        float maxHealth;
         float health;
         int level;
         string type;
+        friend player;
 
     public:
 
