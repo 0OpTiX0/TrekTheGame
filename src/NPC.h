@@ -4,7 +4,7 @@
 #include "player.h"
 
 using namespace std;
-
+class player;
 class NPC{
     private:
         string name; 

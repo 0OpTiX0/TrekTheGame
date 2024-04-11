@@ -166,7 +166,7 @@ double player::alterHealth(double &cs){
     }
 
     //damage condition that also ensures tha the health boundaries arent violated.
-    if (cs < 0){
+    if (cs <= 0){
         pHealth += cs;
         if(pHealth <= MINIMUM){
             pHealth = MINIMUM;
@@ -177,7 +177,7 @@ double player::alterHealth(double &cs){
     }
 
     //healing condition that also ensures that the health boundaries arent violated.
-    if (cs > 0){
+    if (cs >= 0){
         pHealth += cs;
 
         if(pHealth >= pMaxHealth){
