@@ -21,11 +21,30 @@ using namespace std;
 
 int main() {
     string x = "goblin";
+
+    string y = "minor";
+    string z = "medium";
+    string a = "major";
+
+    float playerMax = 25.0;
+    float playerMax2 = 50.0;
+    float playerMax3 = 75.0;
+
     NPC goblin;
 
     goblin.setName(x);
+    cout<< goblin.getName()<<endl<<endl;
 
-    cout<< goblin.getName()<<endl;
+
+    goblin.setType(y);
+    cout<<goblin.getType()<<endl<<endl;
+
+    goblin.setMaxHealth(playerMax);
+
+    cout<<"NPC's Health: "<<goblin.getHealth()<<"/"<<goblin.getMaxHealth()<<endl<<endl;
+    
+
+
 
 
 
